@@ -10,8 +10,25 @@
   <title>switchover</title>
   <link rel="stylesheet" href="css/master.css" />
   <style>
-    .active{
+    .tabbed1 .active{
       background-color: #ccc;
+    }
+    .tabs-nav-sub .active{
+     background-color: transparent;
+    }
+    
+    .tabbed2 .tabs > .tab{
+     margin-left: -10px;
+     margin-right: -10px;
+     padding: 10px;
+     background-color: #fff;
+    }
+    .tabs-nav-sub{
+     text-align: center;
+    }
+    .tabs-nav-sub .item{
+     padding-left: 10px;
+     padding-right: 10px;
     }
   </style>
 </head>
@@ -34,8 +51,8 @@
   <!-- site header(end) -->
 
   <!-- Tabbed(start) -->
-  <div class="mod-gutter">
-    Simple Tabbed：
+  <div class="mod-gutter tabbed1">
+    例1：
     <div class="tabs-nav">
       <ul class="buttons-row-simple flexible-layout">
         <li class="item buttons-row-simple-item">
@@ -88,13 +105,80 @@
     <!-- Tabs(end) -->
   </div>
   <!-- Tabbed(end) -->
-  <hr />
   <br />
   從外部 连接到指定的tab：
   <a id="gotoTab2" class="blue textlink-underline" href="javascript:;">Go to tab2</a>
   <br />
   <br />
-
+  <hr />
+  <!-- Tabbed(start) -->
+  <div class="mod-gutter tabbed2">
+    例2：
+    <div class="tabs-nav tabs-nav2">
+      <ul class="buttons-row buttons-row-centered">
+        <li class="item buttons-row-item active">
+          <a class="btn f-12" href="#text" data-toggle="tab">nav1</a>
+        </li>
+        <li class="item buttons-row-item">
+          <a class="btn f-12" href="#picture" data-toggle="tab">nav2</a>
+        </li>
+        <li class="item buttons-row-item">
+          <button type="button" class="btn f-12" data-toggle="tab">nav3</button>
+        </li>
+      </ul>
+    </div>
+    <!-- Tabs(start) -->
+    <div class="tabs">
+      <div class="tab active">
+        
+        <div class="tabs-nav tabs-nav-sub">
+          <ul class="buttons-row-simple">
+            <li class="item buttons-row-simple-item active">
+              <a class="btn" href="javascript:;" data-toggle="tab">nav-sub1</a>
+            </li>
+            <li class="item buttons-row-simple-item">
+              <a class="btn" href="javascript:;" data-toggle="tab">nav-sub2</a>
+            </li>
+            <li class="item buttons-row-simple-item">
+              <a class="btn" href="javascript:;" data-toggle="tab">nav-sub3</a>
+            </li>
+          </ul>          
+        </div>
+        <!-- Tabs(start) -->
+        <div class="tabs">
+          <div class="tab active">
+            <p>
+            sub1
+            </p>
+          </div>
+          <div class="tab">
+            <p>
+            sub2
+            </p>
+          </div>
+          <div class="tab">
+            <p>
+            sub3
+            </p>
+          </div>          
+        </div>
+        <!-- Tabs(end) -->
+        
+      </div>
+      <div class="tab">
+        <p>
+        tab content2
+        </p>
+      </div>
+      <div class="tab">
+        <p>
+        tab content3
+        </p>
+      </div>
+    </div>
+    <!-- Tabs(end) -->    
+  </div>
+  <!-- Tabbed(end) -->
 </div>
 <!--webapp(end)-->
 
