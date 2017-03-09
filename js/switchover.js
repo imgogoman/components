@@ -100,7 +100,9 @@ switchover.prototype ={
       this.goTo.beforeShowFunction(this);
     }
 
-    opt.currentNavigator.addClass(opt.navigatorActiveClass).siblings().removeClass(opt.navigatorActiveClass);
+    //如果“tabs-nav”下的“data-toggle='tab'”在不同的地方，通过 find 方法查找不容易出错。
+    opt.currentNavigatorParents.find("." +opt.navigatorActiveClass).removeClass(opt.navigatorActiveClass);
+    opt.currentNavigator.addClass(opt.navigatorActiveClass);
     opt.currentTab.addClass(opt.tabActiveClass).siblings().removeClass(opt.tabActiveClass);
 
     //after show tab
