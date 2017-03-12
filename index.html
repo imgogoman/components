@@ -7,29 +7,18 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="format-detection" content="email=no" />
-  <title>switchover</title>
+  <title>Components</title>
+  <link rel="stylesheet" href="css/glyphicons.css" />
+  <link rel="stylesheet" href="js/weui/weui-0.4.3.min.css" />
+  <link rel="stylesheet" href="js/weui/jquery-weui-0.8.2.min.css" />
   <link rel="stylesheet" href="css/master.css" />
-  <style>
-    .tabbed1 .active{
-      background-color: #ccc;
-    }
-    .tabs-nav-sub .active{
-     background-color: transparent;
-    }
-    
-    .tabbed2 .tabs > .tab{
-     margin-left: -10px;
-     margin-right: -10px;
-     padding: 10px;
-     background-color: #fff;
-    }
-    .tabs-nav-sub{
-     text-align: center;
-    }
-    .tabs-nav-sub .item{
-     padding-left: 10px;
-     padding-right: 10px;
-    }
+  <style type="text/css">
+  
+   .input-group input{
+    width: 100%;
+    border: none;
+   }
+  
   </style>
 </head>
 <body>
@@ -39,20 +28,268 @@
   <header class="site-header">
     <!--模块主体(start)-->
     <div class="bd site-header-bd">
-      <h1 class="center">switchover</h1>
-      <div class="right">
-        <button class="icon-only">
-          <i class="glyphicon-more"></i>
-        </button>
-      </div>
+      <h1 class="center">Components</h1>
     </div>
     <!--模块主体(end)-->
   </header>
   <!-- site header(end) -->
-
+  <!--banner(start)-->
+  <div class="banner swiper-container index-banner">
+    <!-- swiper wrapper(start) -->
+    <div class="swiper-wrapper">
+      <!--循环(start)-->
+      <div class="swiper-slide">
+        <a href="#"><img class="item-pic" src="http://placeholdit.sinaapp.com/640x300/6acbb7/ffffff" /></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img class="item-pic" src="http://placeholdit.sinaapp.com/640x300/6acbb7/ffffff" /></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img class="item-pic" src="http://placeholdit.sinaapp.com/640x300/6acbb7/ffffff" /></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img class="item-pic" src="http://placeholdit.sinaapp.com/640x300/6acbb7/ffffff" /></a>
+      </div>
+      <!--循环(end)-->
+    </div>
+    <!-- swiper wrapper(end) -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!--banner(end)-->
+  <br />
+  <!--导航(start)-->
+  <menu class="menu-radius menu-radius-icon">
+    <div>Icon Menu</div>
+    <ul class="cv-medium clearfix">
+      <li class="item">
+        <a class="item-content" href="register.html">
+          <div class="item-content-hd">
+            <i class="glyphicon glyphicon-parents"></i>
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">Register</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="media-list.html">
+          <div class="item-content-hd">
+            <i class="glyphicon glyphicon-list"></i>
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">Media List</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="shopping-cart.html">
+          <div class="item-content-hd">
+            <i class="glyphicon glyphicon-shopping-cart"></i>
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">Shopping cart</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="popup.html">
+          <div class="item-content-hd">
+            <i class="glyphicon glyphicon-inbox-out"></i>
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">Popup</div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </menu>
+  <!--导航(end)-->
+  <br />
+  <br />
+  <!--导航(start)-->
+  <menu class="menu-radius">
+    <div>Image Menu</div>
+    <ul class="cv-medium clearfix">
+      <li class="item">
+        <a class="item-content" href="#">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff" />
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">Item Caption</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="#">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff" />
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">Item Caption</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="#">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff" />
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">Item Caption</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="#">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff" />
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">xxxxxxxxxx123xxxxxxxxxx132xxxxx</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="#">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff" />
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">Item Caption</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="#">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff" />
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">Item Caption</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="#">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff" />
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">Item Caption</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="#">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff" />
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">Item Caption</div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </menu>
+  <!--导航(end)-->
+  <br />
+  <br />
   <!-- Tabbed(start) -->
-  <div class="mod-gutter tabbed1">
-    例1：
+  <div class="mod-gutter">
+    <div class="form-group">
+      <label for="inputName">题目标题</label>
+      <input id="inputName" type="text" class="form-control" placeholder="请输入题目名称">
+    </div>
+    <div class="tabs-nav">
+      <ul class="buttons-row buttons-row-centered">
+        <li class="item buttons-row-item">
+          <a class="btn f-12" href="#text" data-toggle="tab">文字</a>
+        </li>
+        <li class="item buttons-row-item">
+          <a class="btn f-12" href="#picture" data-toggle="tab">图片</a>
+        </li>
+        <li class="item buttons-row-item active">
+          <button type="button" class="btn f-12" data-toggle="tab">button nav3</button>
+        </li>
+        <li class="item buttons-row-item">
+          <button type="button" class="btn f-12" data-toggle="tab">button nav4</button>
+        </li>
+      </ul>
+    </div>
+    <!-- Tabs(start) -->
+    <div class="tabs">
+      <div id="text" class="tab">
+        <ul id="inputGroup" class="input-group">
+          <li class="input-group-item">
+            <input type="text" placeholder="请输入选项名">
+          </li>
+          <li class="input-group-item">
+            <input type="text" placeholder="请输入选项名">
+          </li>
+          <li class="input-group-item">
+            <input type="text" placeholder="请输入选项名">
+          </li>
+        </ul>
+        <div class="h-center">
+          <button id="btnAddTextItem" class="btn btn-green">
+            <i class="glyphicon-circle-plus"></i>&nbsp;添加选项
+          </button>
+        </div>
+      </div>
+      <div id="picture" class="tab">
+        <p class="orange">
+          图示展示
+        </p>
+        <img class="item-pic" src="http://placeholdit.sinaapp.com/64x64/6acbb7/ffffff" />
+        <img class="item-pic" src="http://placeholdit.sinaapp.com/64x64/6acbb7/ffffff" />
+        <img class="item-pic" src="http://placeholdit.sinaapp.com/64x64/6acbb7/ffffff" />
+        <img class="item-pic" src="http://placeholdit.sinaapp.com/64x64/6acbb7/ffffff" />
+      </div>
+      <div class="tab active"> tab 3，人工指定第三个</div>
+      <div class="tab"> tab 4</div>
+    </div>
+    <!-- Tabs(end) -->
+  </div>
+  <!-- Tabbed(end)-->
+  <br />
+  <br />
+  <br />
+  <p class="f-12 h-center">
+    從外部 连接到指定的tab：
+    <a id="gotoTabPicture" class="blue textlink-underline" href="javascript:;">Go to tab2(图片)</a>
+  </p>
+  <br />
+  <hr />
+  <!-- Tabbed(start)-->
+  <div class="mod-gutter">
+    Simple Tabbed 1：
+    <div class="tabs-nav">
+      <ul class="buttons-row-simple">
+        <li class="item buttons-row-simple-item active">
+          <a class="btn" href="javascript:;" data-toggle="tab">xxx1</a>
+        </li>
+        <li class="item buttons-row-simple-item">
+          <a class="btn" href="javascript:;" data-toggle="tab">xxx2</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Tabs(start) -->
+    <div class="tabs">
+      <div id="content1" class="tab">
+        content1
+      </div>
+      <div id="content2" class="tab">
+        content2
+      </div>
+    </div>
+    <!-- Tabs(end) -->
+  </div>
+  <!-- Tabbed(end) -->
+  <br />
+  <!-- Tabbed(start) -->
+  <div class="mod-gutter">
+    Simple Tabbed 2：
     <div class="tabs-nav">
       <ul class="buttons-row-simple flexible-layout">
         <li class="item buttons-row-simple-item">
@@ -77,115 +314,51 @@
     <!-- Tabs(start) -->
     <div class="tabs">
       <div id="tabContent1" class="tab">
-        <p>
         tab content1
-        </p>
       </div>
       <div id="tabContent2" class="tab">
-        <p>
         tab content2
-        </p>
       </div>
       <div id="tabContent3" class="tab">
-        <p>
         tab content3
-        </p>
       </div>
       <div id="tabContent4" class="tab active">
-        <p>
-        tab content4，人工指定第四个
-        </p>
+        tab content4，最初由人工指定第四个
       </div>
       <div id="tabContent5" class="tab">
-        <p>
         tab content5
-        </p>
       </div>
     </div>
     <!-- Tabs(end) -->
   </div>
   <!-- Tabbed(end) -->
-  <br />
-  從外部 连接到指定的tab：
-  <a id="gotoTab2" class="blue textlink-underline" href="javascript:;">Go to tab2</a>
-  <br />
-  <br />
   <hr />
-  <!-- Tabbed(start) -->
-  <div class="mod-gutter tabbed2">
-    例2：
-    <div class="tabs-nav tabs-nav2">
-      <ul class="buttons-row buttons-row-centered">
-        <li class="item buttons-row-item active">
-          <a class="btn f-12" href="#text" data-toggle="tab">nav1</a>
-        </li>
-        <li class="item buttons-row-item">
-          <a class="btn f-12" href="#picture" data-toggle="tab">nav2</a>
-        </li>
-        <li class="item buttons-row-item">
-          <button type="button" class="btn f-12" data-toggle="tab">nav3</button>
-        </li>
-      </ul>
-    </div>
-    <!-- Tabs(start) -->
-    <div class="tabs">
-      <div class="tab active">
-        
-        <div class="tabs-nav tabs-nav-sub">
-          <ul class="buttons-row-simple">
-            <li class="item buttons-row-simple-item active">
-              <a class="btn" href="javascript:;" data-toggle="tab">nav-sub1</a>
-            </li>
-            <li class="item buttons-row-simple-item">
-              <a class="btn" href="javascript:;" data-toggle="tab">nav-sub2</a>
-            </li>
-            <li class="item buttons-row-simple-item">
-              <a class="btn" href="javascript:;" data-toggle="tab">nav-sub3</a>
-            </li>
-          </ul>          
-        </div>
-        <!-- Tabs(start) -->
-        <div class="tabs">
-          <div class="tab active">
-            <p>
-            sub1
-            </p>
-          </div>
-          <div class="tab">
-            <p>
-            sub2
-            </p>
-          </div>
-          <div class="tab">
-            <p>
-            sub3
-            </p>
-          </div>          
-        </div>
-        <!-- Tabs(end) -->
-        
-      </div>
-      <div class="tab">
-        <p>
-        tab content2
-        </p>
-      </div>
-      <div class="tab">
-        <p>
-        tab content3
-        </p>
-      </div>
-    </div>
-    <!-- Tabs(end) -->    
-  </div>
-  <!-- Tabbed(end) -->
+  <br />
+  <br />
+  <br />
+  <!--footer(start)-->
+  <footer class="h-center">
+    <button title="确认" class="btn-green">确认</button>
+  </footer>
+  <!--footer(end)-->
 </div>
 <!--webapp(end)-->
 
+<a id="btnGoTop" class="btn-gotop" href="#top">
+  <i class="glyphicon-up-arrow"></i>
+</a>
+
 
 <script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/switchover.js"></script>
+<script src="js/swiper3.07.min.js"></script>
+<script src="js/frontend.js"></script>
 <script>
+
+var mySwiper1 = new Swiper ('.swiper-container', {
+  //centeredSlides : true,    //设置 Slide 元素居中，默认是靠左
+  //slidesPerView : 'auto',   //设置一屏显示多少个 Slide 元素，默认是1个/屏
+  pagination : '.swiper-pagination'
+});
 
 var tabbed = new switchover('.tabs-nav [data-toggle="tab"]');
 
@@ -197,12 +370,44 @@ tabbed.on('afterShow', function(switchover){
   console.log('after show tab: ' +(switchover.index+1) );
 });
 
-$('#gotoTab2').click(function(){
+$('#gotoTabPicture').click(function(){
   console.log('you click "Go to tab2"');
-  tabbed.goTo('#tabContent2', '', function(switchover){
-   console.log('show tab 2, callback');
+  tabbed.goTo('#picture', '', function(switchover){
+   console.log('show tab 2: picture, callback');
   })
 });
+
+
+
+
+$('#btnAddTextItem').click(function(){
+  $('#inputGroup').append(
+    '<li class="input-group-item">' +
+    '  <input type="text" placeholder="请输入选项名">' +
+    '</li>'
+  )
+});
+
+
+//accordion
+$(".accordion-list a.item-content").click(function(){
+  var _this = $(this);
+  if(_this.parent().hasClass('accordion-item-expanded')){
+    _this.parent().removeClass('accordion-item-expanded');
+    _this.next('.accordion-item-content').height('');
+  }else{
+    _this.parent().addClass('accordion-item-expanded').siblings().removeClass('accordion-item-expanded');
+    _this.parents('.accordion-list').find('.accordion-item-content').height('');
+
+    var h = _this.next().find('.accordion-item-content-bd').height();
+
+    _this.next('.accordion-item-content').height(h);
+
+  }
+
+});
+
+
 
 </script>
 </body>
