@@ -1,2 +1,2 @@
 demo
-http://c2funny.com/cases/switchover/
+http://c2funny.com/cases/components/
