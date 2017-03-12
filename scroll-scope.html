@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="email=no" />
+  <title>scrollScope</title>
+  <link rel="stylesheet" href="css/master.css" />
+  <style>
+  
+    .cv-medium .item-pic{
+     width: 20%;
+     transition: ease 0.5s;
+    }
+
+    .menu-radius .item-content-hd{
+     display: flex;
+     display: -webkit-flex;
+     height: 50px;
+     align-items: center;
+     -webkit-align-items: center;
+     justify-content: center;
+     -webkit-justify-content: center;
+
+    }
+
+    .nav-sticky-top{
+     position: absolute;
+     top: 42px;
+     z-index: 1;
+     width: 100%;
+     max-width: 640px;
+     transition: ease 0.5s;
+    }
+    .nav-sticky-top-on{
+     position: fixed;
+     top: 0;
+     background-color: #eee;
+    }
+
+    .nav-sticky-top .item-on .item-pic{
+     width: 80%;
+    }
+
+    .side-menu{
+     position: fixed;
+     right: 0;
+     top: 40%;
+    }
+    .side-menu-off{
+     right: -50px;
+    }
+
+    .side-menu .item{
+     padding-left: 2px;
+     padding-right: 2px;
+     transition: ease 0.5s;
+    }
+
+    .side-menu .item-on{
+     margin-left: -30px;
+     background-color: #fff;
+    }
+
+
+    .contents{
+     margin-top: 90px;
+     margin-left: 20px;
+    }
+
+
+  
+  </style>
+</head>
+<body>
+<!-- webapp(start) -->
+<div class="webapp">
+  <!-- site header(start) -->
+  <header class="site-header">
+    <!--模块主体(start)-->
+    <div class="bd site-header-bd">
+      <h1 class="center">scrollScope</h1>
+    </div>
+    <!--模块主体(end)-->
+  </header>
+  <!-- site header(end) -->
+  <nav id="navStickyTop" class="nav-sticky-top menu-radius">
+    <ul class="cv-medium clearfix">
+      <li class="item">
+        <a class="item-content" href="#scrollScope1">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff">
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">A</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="#scrollScope2">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff">
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">B</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="#scrollScope3">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff">
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">C</div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-content" href="#scrollScope4">
+          <div class="item-content-hd">
+            <img class="item-pic" src="http://placeholdit.sinaapp.com/128x128/6acbb7/ffffff">
+          </div>
+          <div class="item-content-bd">
+            <div class="item-caption item-caption-ellipsis">D</div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <aside id="sideMenu" class="side-menu side-menu">
+    <ul>
+      <li class="item">
+        <a href="#scrollScope1">A</a>
+      </li>
+      <li class="item">
+        <a href="#scrollScope2">B</a>
+      </li>
+      <li class="item">
+        <a href="#scrollScope3">C</a>
+      </li>
+      <li class="item">
+        <a href="#scrollScope4">D</a>
+      </li>
+    </ul>
+  </aside>
+  <div id="contents" class="contents">
+    <div id="scrollScope1" class="item scroll-scope">
+      A<br />A<br />A<br />A<br />A<br />A<br />A<br />A<br />A<br />A<br />A<br />A
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <hr />
+    </div>
+    <div id="scrollScope2" class="item scroll-scope">
+      B<br />B<br />B<br />B<br />B<br />B<br />B<br />B<br />B<br />B<br />B<br />B
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <hr />
+    </div>
+    <div id="scrollScope3" class="item scroll-scope">
+      C<br />C<br />C<br />C<br />C<br />C<br />C<br />C<br />C<br />C<br />C<br />C
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <hr />
+    </div>
+    <div id="scrollScope4" class="item scroll-scope">
+      D<br />D<br />D<br />D<br />D<br />D<br />D<br />D<br />D<br />D<br />D<br />D
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <hr />
+    </div>
+  </div>
+  ...
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+
+
+</div>
+<!--webapp(end)-->
+
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/frontend.js"></script>
+<script>
+
+
+var webApp = getID("webApp");
+var navStickyTop = getID("navStickyTop");
+var sideMenu = getID("sideMenu");
+var scrollScope1 = new scrollScope("#navStickyTop", {
+  min: navStickyTop.offsetTop,
+  max: getID("contents").offsetTop + getID("contents").offsetHeight,
+  onEnter: function(opt){
+    navStickyTop.classList.add("nav-sticky-top-on");
+  },
+  onLeave: function(){
+    navStickyTop.classList.remove("nav-sticky-top-on");
+  }
+});
+
+
+
+var navItems = document.querySelectorAll("#navStickyTop .item");
+var sideMenuItems = document.querySelectorAll("#sideMenu .item");
+var scrollScope2 = new scrollScope(".scroll-scope", {
+  migrated: -110,
+  onEnter: function(opt){
+    debug.innerHTML += "Enter: " +opt.index +"<br />";
+    getSiblings(navItems[opt.index], function(e){
+      e.classList.remove("item-on");
+    });
+    getSiblings(sideMenuItems[opt.index], function(e){
+      e.classList.remove("item-on");
+    });
+
+    navItems[opt.index].classList.add("item-on");
+    sideMenuItems[opt.index].classList.add("item-on");
+  },
+  onLeave: function(opt){
+    debug.innerHTML += "Leave: " +opt.index +"<br />";
+    sideMenu.classList.remove("side-menu-off");
+  },
+  onLeaveFirstElement: function(opt){
+    getSiblings(navItems[0], function(e){
+      e.classList.remove("item-on");
+    });
+    getSiblings(sideMenuItems[0], function(e){
+      e.classList.remove("item-on");
+    });
+
+    navItems[0].classList.add("item-on");
+    sideMenuItems[0].classList.add("item-on");
+
+  },
+  onLeaveLastElement: function(opt){
+    getSiblings(navItems[3], function(e){
+      e.classList.remove("item-on");
+    });
+    getSiblings(sideMenuItems[3], function(e){
+      e.classList.remove("item-on");
+    });
+
+    navItems[3].classList.add("item-on");
+    sideMenuItems[3].classList.add("item-on");
+
+    sideMenu.classList.add("side-menu-off");
+  }
+});
+
+
+</script>
+</body>
+</html>

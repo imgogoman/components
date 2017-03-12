@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="email=no" />
+  <title>Popup</title>
+  <link rel="stylesheet" href="css/glyphicons.css" />
+  <link rel="stylesheet" href="js/weui/weui-0.4.3.min.css" />
+  <link rel="stylesheet" href="js/weui/jquery-weui-0.8.2.min.css" />
+  <link rel="stylesheet" href="css/master.css" />
+</head>
+<body>
+<!-- webapp(start) -->
+<div class="webapp">
+  <!-- site header(start) -->
+  <header class="site-header">
+    <!--模块主体(start)-->
+    <div class="bd site-header-bd">
+      <div class="left">
+        <a class="btn-hastext" href="index.html">
+          <i class="icon icon-arrow-left"></i>
+          返回
+        </a>
+      </div>
+      <h1 class="center">Popup</h1>
+    </div>
+    <!--模块主体(end)-->
+  </header>
+  <!-- site header(end) -->
+
+  <button id="btnFollow" href="#">弹出“关注”</button>
+  <button id="btnShare" href="#">弹出“分享”</button>
+
+</div>
+<!-- webapp(end) -->
+<!--弹出层: 关注(start)-->
+<div id="popupWrapFollow" class="popup-wrap popup-wrap-follow">
+  <div class="area-overlay"><!--这是遮罩层--></div>
+  <!-- popup maxicard intro(start) -->
+  <div class="popup popup-follow">
+    <!--
+    <div class="hd popup-hd">
+      <button class="btn-close">
+        <i class="glyphicon-remove-2"></i>
+      </button>
+    </div>
+    -->
+    <!--模块主体(start)-->
+    <div class="bd">
+      <img src="images/guide-follow.png" width="100%" />
+    </div>
+    <!--模块主体(end)-->
+  </div>
+  <!-- popup maxicard intro(end) -->
+</div>
+<!--弹出层: 关注(end)-->
+<!--弹出层: 分享(start)-->
+<div id="popupWrapShare" class="popup-wrap popup-wrap-share">
+  <div class="area-overlay"><!--这是遮罩层--></div>
+  <!-- popup maxicard intro(start) -->
+  <div class="popup popup-share">
+    <!--
+    <div class="hd popup-hd">
+      <button class="btn-close">
+        <i class="glyphicon-remove-2"></i>
+      </button>
+    </div>
+    -->
+    <!--模块主体(start)-->
+    <div class="bd">
+      <img src="images/guide-share.png" width="100%" />
+    </div>
+    <!--模块主体(end)-->
+  </div>
+  <!-- popup maxicard intro(end) -->
+</div>
+<!--弹出层: 分享(end)-->
+
+
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/frontend.js"></script>
+
+<script type="text/javascript">
+
+
+//弹出“关注”
+$("#btnFollow").on("click", function(){
+  $("#popupWrapFollow").show();
+});
+
+//弹出“分享”
+$("#btnShare").on("click", function(){
+  $("#popupWrapShare").show();
+});
+
+$(".popup-wrap .btn-close, .area-overlay").on('click', function(e){
+  $(this).parents('.popup-wrap').removeAttr('style');
+})
+
+
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="email=no" />
+  <title>Register</title>
+  <link rel="stylesheet" href="css/glyphicons.css" />
+  <link rel="stylesheet" href="js/weui/weui-0.4.3.min.css" />
+  <link rel="stylesheet" href="js/weui/jquery-weui-0.8.2.min.css" />
+  <link rel="stylesheet" href="css/master.css" />
+</head>
+<body>
+<!-- webapp(start) -->
+<div class="webapp">
+  <!-- header(start) -->
+  <header class="site-header">
+    <div class="bd site-header-bd clearfix">
+      <div class="left">
+        <a class="btn-hastext" href="index.html">
+          <i class="icon icon-arrow-left"></i>
+          返回
+        </a>
+      </div>
+      <div class="center">
+        <h1>注册</h1>
+      </div>
+    </div>
+  </header>
+  <!-- header(end) -->
+
+  <!-- form register(start) -->
+  <div id="fmRegister" class="fm-register">
+    <fieldset class="fieldset1">
+      <div class="weui_cells weui_cells_form">
+        <div class="weui_cell">
+          <div class="weui_cell_hd">
+            <label class="weui_label" for="inpMobile"><i class="glyphicon-iphone"></i></label>
+          </div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input id="inpMobile" class="weui_input" type="tel" placeholder="请输入11位手机号码" />
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd">
+            <label class="weui_label" for="inpMobile"><i class="glyphicon-keyboard-wireless"></i></label>
+          </div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input id="inpMobile" class="weui_input" type="text" placeholder="输入验证码" />
+          </div>
+          <div class="weui_cell_ft">
+            <button type="button" class="weui_btn weui_btn_mini weui_btn_default">发送验证码</button>
+          </div>
+        </div>
+      </div>
+      <div class="weui_btn_area">
+        <button type="type" class="weui_btn weui_btn_primary" v-on:click="btnSubmit1">提　交</button>
+      </div>
+    </fieldset>
+    <fieldset class="fieldset2">
+      <div class="weui_cells_title">完善资料</div>
+      <div class="weui_cells weui_cells_form">
+        <div class="weui_cell">
+          <div class="weui_cell_hd">
+            <label class="weui_label" for="inpName"><i class="glyphicon-user"></i></label>
+          </div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input id="inpName" v-model="inpName" class="weui_input" type="text" placeholder="姓　名" />
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd">
+            <label class="weui_label" for="inpID"><i class="glyphicon-credit-card"></i></label>
+          </div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input id="inpID" v-model="inpID" class="weui_input" type="tel" placeholder="身份证号" />
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd">
+            <label class="weui_label" for="inpCompany"><i class="glyphicon-briefcase"></i></label>
+          </div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input id="inpCompany" v-model="inpCompany" class="weui_input" type="text" placeholder="公　司" />
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd">
+            <label class="weui_label" for="inpRegion"><i class="glyphicon-riflescope"></i></label>
+          </div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input id="inpRegion" v-model="inpRegion" class="weui_textarea" placeholder="地　区" />
+          </div>
+        </div>
+      </div>
+      <div class="weui_btn_area">
+        <button type="type" class="weui_btn weui_btn_primary" v-on:click="btnSubmit2">提　交</button>
+      </div>
+
+    </fieldset>
+  </div>
+  <!-- form register(end)-->
+
+</div>
+<!-- webapp(end) -->
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/weui/jquery-weui-0.8.2.min.js"></script>
+<script src="js/weui/city-picker.js"></script>
+
+<script src="js/vue/vue-2.1.6.js"></script>
+<script src="js/frontend.js"></script>
+<script>
+
+
+
+var vm = new Vue({
+  el: "#fmRegister",
+  data: {
+    inpName: "",
+    inpID: "",
+    inpMobile: "",
+    inpCompany: "",
+    inpRegion: "",
+  },
+  methods: {
+    btnSubmit1: function(ev){
+      console.log(this.inpName);
+      console.log(this.inpID);
+    },
+    btnSubmit2: function(){}
+  },
+  mounted: function(){
+    $("#inpRegion").cityPicker({
+      title: "请选择收货地址"
+    });
+  }
+})
+
+
+
+
+</script>
+
+</body>
+</html>
